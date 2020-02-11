@@ -1,0 +1,10 @@
+C:\Users\User\source\repos\finalProjectWindowsForm\finalProjectWindowsForm\obj\Debug\finalProjectWindowsForm.csprojAssemblyReference.cache
+C:\Users\User\source\repos\finalProjectWindowsForm\finalProjectWindowsForm\obj\Debug\finalProjectWindowsForm.Properties.Resources.resources
+C:\Users\User\source\repos\finalProjectWindowsForm\finalProjectWindowsForm\obj\Debug\finalProjectWindowsForm.csproj.GenerateResource.cache
+C:\Users\User\source\repos\finalProjectWindowsForm\finalProjectWindowsForm\obj\Debug\finalProjectWindowsForm.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\finalProjectWindowsForm\finalProjectWindowsForm\bin\Debug\finalProjectWindowsForm.exe.config
+C:\Users\User\source\repos\finalProjectWindowsForm\finalProjectWindowsForm\bin\Debug\finalProjectWindowsForm.exe
+C:\Users\User\source\repos\finalProjectWindowsForm\finalProjectWindowsForm\bin\Debug\finalProjectWindowsForm.pdb
+C:\Users\User\source\repos\finalProjectWindowsForm\finalProjectWindowsForm\obj\Debug\finalProjectWindowsForm.exe
+C:\Users\User\source\repos\finalProjectWindowsForm\finalProjectWindowsForm\obj\Debug\finalProjectWindowsForm.pdb
+C:\Users\User\source\repos\finalProjectWindowsForm\finalProjectWindowsForm\obj\Debug\finalProjectWindowsForm.Forms.UserLogin.resources
