@@ -32,13 +32,14 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.EmailEnter = new System.Windows.Forms.TextBox();
-            this.PasswordEnter = new System.Windows.Forms.TextBox();
+            this.TxtEmail = new System.Windows.Forms.TextBox();
+            this.TxtPassword = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.LblUsername = new System.Windows.Forms.Label();
             this.LblPassword = new System.Windows.Forms.Label();
+            this.BtnClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,10 +60,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(126, 91);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 55);
+            this.label1.Size = new System.Drawing.Size(139, 53);
             this.label1.TabIndex = 1;
             this.label1.Text = "SIGN";
-            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // label2
             // 
@@ -72,32 +72,31 @@
             this.label2.ForeColor = System.Drawing.Color.LightGray;
             this.label2.Location = new System.Drawing.Point(263, 94);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 52);
+            this.label2.Size = new System.Drawing.Size(67, 51);
             this.label2.TabIndex = 2;
-            this.label2.Text = "UP";
-            this.label2.Click += new System.EventHandler(this.Label2_Click);
+            this.label2.Text = "IN";
             // 
-            // EmailEnter
+            // TxtEmail
             // 
-            this.EmailEnter.BackColor = System.Drawing.SystemColors.Control;
-            this.EmailEnter.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.EmailEnter.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmailEnter.Location = new System.Drawing.Point(58, 322);
-            this.EmailEnter.Multiline = true;
-            this.EmailEnter.Name = "EmailEnter";
-            this.EmailEnter.Size = new System.Drawing.Size(403, 39);
-            this.EmailEnter.TabIndex = 3;
+            this.TxtEmail.BackColor = System.Drawing.SystemColors.Control;
+            this.TxtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtEmail.Location = new System.Drawing.Point(58, 322);
+            this.TxtEmail.Multiline = true;
+            this.TxtEmail.Name = "TxtEmail";
+            this.TxtEmail.Size = new System.Drawing.Size(403, 39);
+            this.TxtEmail.TabIndex = 3;
             // 
-            // PasswordEnter
+            // TxtPassword
             // 
-            this.PasswordEnter.BackColor = System.Drawing.SystemColors.Control;
-            this.PasswordEnter.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.PasswordEnter.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasswordEnter.Location = new System.Drawing.Point(58, 417);
-            this.PasswordEnter.Multiline = true;
-            this.PasswordEnter.Name = "PasswordEnter";
-            this.PasswordEnter.Size = new System.Drawing.Size(403, 39);
-            this.PasswordEnter.TabIndex = 4;
+            this.TxtPassword.BackColor = System.Drawing.SystemColors.Control;
+            this.TxtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtPassword.Location = new System.Drawing.Point(58, 417);
+            this.TxtPassword.Multiline = true;
+            this.TxtPassword.Name = "TxtPassword";
+            this.TxtPassword.Size = new System.Drawing.Size(403, 39);
+            this.TxtPassword.TabIndex = 4;
             // 
             // btnLogin
             // 
@@ -113,6 +112,7 @@
             this.btnLogin.TabIndex = 5;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
             // panel1
             // 
@@ -140,7 +140,6 @@
             this.LblUsername.Size = new System.Drawing.Size(124, 29);
             this.LblUsername.TabIndex = 8;
             this.LblUsername.Text = "Username";
-            this.LblUsername.Click += new System.EventHandler(this.LblUsername_Click);
             // 
             // LblPassword
             // 
@@ -153,25 +152,42 @@
             this.LblPassword.TabIndex = 9;
             this.LblPassword.Text = "Password";
             // 
+            // BtnClose
+            // 
+            this.BtnClose.BackColor = System.Drawing.Color.White;
+            this.BtnClose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnClose.BackgroundImage")));
+            this.BtnClose.FlatAppearance.BorderSize = 0;
+            this.BtnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnClose.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnClose.Location = new System.Drawing.Point(442, 0);
+            this.BtnClose.Name = "BtnClose";
+            this.BtnClose.Size = new System.Drawing.Size(75, 45);
+            this.BtnClose.TabIndex = 10;
+            this.BtnClose.Text = "X";
+            this.BtnClose.UseVisualStyleBackColor = false;
+            this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
+            // 
             // UserLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(513, 654);
+            this.Controls.Add(this.BtnClose);
             this.Controls.Add(this.LblPassword);
             this.Controls.Add(this.LblUsername);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.PasswordEnter);
-            this.Controls.Add(this.EmailEnter);
+            this.Controls.Add(this.TxtPassword);
+            this.Controls.Add(this.TxtEmail);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UserLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Load += new System.EventHandler(this.UserLogin_Load);
+
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -183,12 +199,13 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox EmailEnter;
-        private System.Windows.Forms.TextBox PasswordEnter;
+        private System.Windows.Forms.TextBox TxtEmail;
+        private System.Windows.Forms.TextBox TxtPassword;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label LblUsername;
         private System.Windows.Forms.Label LblPassword;
+        private System.Windows.Forms.Button BtnClose;
     }
 }

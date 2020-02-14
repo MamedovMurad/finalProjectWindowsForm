@@ -16,5 +16,25 @@ namespace finalProjectWindowsForm.Forms
         {
             InitializeComponent();
         }
+
+        private void BtnPerson_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void BtnBook_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Dasboard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
