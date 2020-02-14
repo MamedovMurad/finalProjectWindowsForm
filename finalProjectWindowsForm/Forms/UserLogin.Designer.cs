@@ -95,6 +95,7 @@
             this.TxtPassword.Location = new System.Drawing.Point(58, 417);
             this.TxtPassword.Multiline = true;
             this.TxtPassword.Name = "TxtPassword";
+            this.TxtPassword.PasswordChar = '*';
             this.TxtPassword.Size = new System.Drawing.Size(403, 39);
             this.TxtPassword.TabIndex = 4;
             // 
@@ -187,7 +188,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UserLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

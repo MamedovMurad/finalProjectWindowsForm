@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace finalProjectWindowsForm.Models
 {
-    class Buy
+    public class Order
     {
         [ Key]
         public int PurchaseID { get; set; }

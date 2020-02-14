@@ -5,27 +5,26 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
 using finalProjectWindowsForm.Models;
-using finalProjectWindowsForm.Forms;
 using System.Data.SqlClient;
 
 
 namespace finalProjectWindowsForm.Data
     
 {
-    class LibraryContext : DbContext
+    public class LibraryContext : DbContext
     {
         public LibraryContext() : base("DefaultConnection")
         {
 
-
+            Database.SetInitializer(new DropCreateDatabaseAlways<LibraryContext>());
         }
         public DbSet<User> User{ get; set; }
-        public DbSet<Book> Book { get; set; }
-        public DbSet<Person> Person { get; set; }
+        public DbSet<Models.Book> Book { get; set; }
+        public DbSet<Models.Person> Person { get; set; }
 
         public DbSet<Managment> Management { get; set; }
 
-        public DbSet<Buy> Purchase { get; set; }
+        public DbSet<Models.Order> Order{ get; set; }
  
     }
 }

@@ -24,3 +24,7 @@ C:\Users\User\Desktop\finalProjectWindowsForm\finalProjectWindowsForm\bin\Debug\
 C:\Users\User\Desktop\finalProjectWindowsForm\finalProjectWindowsForm\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\User\Desktop\finalProjectWindowsForm\finalProjectWindowsForm\obj\Debug\finalProjectWindowsForm.csproj.CopyComplete
 C:\Users\User\Desktop\finalProjectWindowsForm\finalProjectWindowsForm\obj\Debug\finalProjectWindowsForm.Forms.Dasboard.resources
+C:\Users\User\Desktop\finalProjectWindowsForm\finalProjectWindowsForm\obj\Debug\finalProjectWindowsForm.Forms.Book.resources
+C:\Users\User\Desktop\finalProjectWindowsForm\finalProjectWindowsForm\obj\Debug\finalProjectWindowsForm.Forms.Person.resources
+C:\Users\User\Desktop\finalProjectWindowsForm\finalProjectWindowsForm\obj\Debug\finalProjectWindowsForm.Forms.Order.resources
+C:\Users\User\Desktop\finalProjectWindowsForm\finalProjectWindowsForm\obj\Debug\finalProjectWindowsForm.Migrations.ADD.resources

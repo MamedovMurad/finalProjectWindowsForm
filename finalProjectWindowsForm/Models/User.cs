@@ -10,7 +10,7 @@ using finalProjectWindowsForm.Data;
 
 namespace finalProjectWindowsForm.Models
 {
-    class User
+    public class User
     {
 
         [Key]

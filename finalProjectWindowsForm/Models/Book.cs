@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace finalProjectWindowsForm.Models
 {
-    class Book
+   public class Book
     {
         [Key]
         public int BookID { get; set; }
@@ -24,5 +24,6 @@ namespace finalProjectWindowsForm.Models
         [MaxLength(50)]
         public string BookGenre{ get; set; }
         public float BookPrice { get; set; }
+        public string Count { get; set; }
     }
 }

@@ -49,7 +49,8 @@ namespace finalProjectWindowsForm.Forms
                 return;
             }
 
-         User user = _context.User.FirstOrDefault(u => u.Status && u.Email == LblUsername.Text && u.Password == TxtPassword.Text);
+         User user = _context.User.FirstOrDefault(u => u.Username == TxtEmail.Text
+                                                    && u.Password == TxtPassword.Text);
 
             if (user != null)
             {
@@ -57,13 +58,15 @@ namespace finalProjectWindowsForm.Forms
                 dashboard.Show();
 
 
-
+               
                 return;
+                this.Close();
             }
             MessageBox.Show("E-poçt və ya şifrə yalnışdır");
 
+            
         }
-
+        
 
     }
 }
