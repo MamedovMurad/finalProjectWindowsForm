@@ -20,7 +20,7 @@ namespace finalProjectWindowsForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Book());
+            Application.Run(new BooksForm());
         }
     }
 }

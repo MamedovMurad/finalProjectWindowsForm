@@ -10,9 +10,9 @@ namespace finalProjectWindowsForm.Models
     public class Order
     {
         [ Key]
-        public int PurchaseID { get; set; }
+        public int OrderID { get; set; }
         [Required]
-        public Managment Managment { get; set; }
+        public Management Management { get; set; }
         [Required]
         public float Money { get; set; }
         [Required]

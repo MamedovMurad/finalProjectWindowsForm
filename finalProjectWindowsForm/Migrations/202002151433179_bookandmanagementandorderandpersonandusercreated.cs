@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class ADD : DbMigration
+    public partial class bookandmanagementandorderandpersonandusercreated : DbMigration
     {
         public override void Up()
         {
@@ -16,12 +16,11 @@
                         PublisherName = c.String(nullable: false, maxLength: 50),
                         BookGenre = c.String(nullable: false, maxLength: 50),
                         BookPrice = c.Single(nullable: false),
-                        Count = c.String(),
                     })
                 .PrimaryKey(t => t.BookID);
             
             CreateTable(
-                "dbo.Managments",
+                "dbo.Managements",
                 c => new
                     {
                         OrderID = c.Int(nullable: false, identity: true),
@@ -31,8 +30,8 @@
                         Person_PersonID = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.OrderID)
-                .ForeignKey("dbo.Books", t => t.Book_BookID, cascadeDelete: true)
-                .ForeignKey("dbo.People", t => t.Person_PersonID, cascadeDelete: true)
+                .ForeignKey("dbo.Books", t => t.Book_BookID, cascadeDelete: false)
+                .ForeignKey("dbo.People", t => t.Person_PersonID, cascadeDelete: false)
                 .Index(t => t.Book_BookID)
                 .Index(t => t.Person_PersonID);
             
@@ -53,14 +52,14 @@
                 "dbo.Orders",
                 c => new
                     {
-                        PurchaseID = c.Int(nullable: false, identity: true),
+                        OrderID = c.Int(nullable: false, identity: true),
                         Money = c.Single(nullable: false),
                         BookReturnededDate = c.DateTime(nullable: false),
-                        Managment_OrderID = c.Int(nullable: false),
+                        Management_OrderID = c.Int(nullable: false),
                     })
-                .PrimaryKey(t => t.PurchaseID)
-                .ForeignKey("dbo.Managments", t => t.Managment_OrderID, cascadeDelete: true)
-                .Index(t => t.Managment_OrderID);
+                .PrimaryKey(t => t.OrderID)
+                .ForeignKey("dbo.Managements", t => t.Management_OrderID, cascadeDelete: false)
+                .Index(t => t.Management_OrderID);
             
             CreateTable(
                 "dbo.Users",
@@ -79,16 +78,16 @@
         
         public override void Down()
         {
-            DropForeignKey("dbo.Orders", "Managment_OrderID", "dbo.Managments");
-            DropForeignKey("dbo.Managments", "Person_PersonID", "dbo.People");
-            DropForeignKey("dbo.Managments", "Book_BookID", "dbo.Books");
-            DropIndex("dbo.Orders", new[] { "Managment_OrderID" });
-            DropIndex("dbo.Managments", new[] { "Person_PersonID" });
-            DropIndex("dbo.Managments", new[] { "Book_BookID" });
+            DropForeignKey("dbo.Orders", "Management_OrderID", "dbo.Managements");
+            DropForeignKey("dbo.Managements", "Person_PersonID", "dbo.People");
+            DropForeignKey("dbo.Managements", "Book_BookID", "dbo.Books");
+            DropIndex("dbo.Orders", new[] { "Management_OrderID" });
+            DropIndex("dbo.Managements", new[] { "Person_PersonID" });
+            DropIndex("dbo.Managements", new[] { "Book_BookID" });
             DropTable("dbo.Users");
             DropTable("dbo.Orders");
             DropTable("dbo.People");
-            DropTable("dbo.Managments");
+            DropTable("dbo.Managements");
             DropTable("dbo.Books");
         }
     }

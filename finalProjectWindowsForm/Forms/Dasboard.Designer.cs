@@ -30,43 +30,43 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dasboard));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.Ext = new System.Windows.Forms.PictureBox();
+            this.Kecid = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.BtnOrder = new System.Windows.Forms.Button();
             this.BtnBook = new System.Windows.Forms.Button();
             this.BtnPerson = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Ext)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Location = new System.Drawing.Point(2, 3);
+            this.panel1.Controls.Add(this.Ext);
+            this.panel1.Location = new System.Drawing.Point(2, 6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1000, 68);
+            this.panel1.Size = new System.Drawing.Size(1480, 65);
             this.panel1.TabIndex = 1;
             // 
-            // pictureBox2
+            // Ext
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(924, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(73, 56);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.PictureBox2_Click);
+            this.Ext.BackColor = System.Drawing.Color.Transparent;
+            this.Ext.Image = ((System.Drawing.Image)(resources.GetObject("Ext.Image")));
+            this.Ext.Location = new System.Drawing.Point(1407, 3);
+            this.Ext.Name = "Ext";
+            this.Ext.Size = new System.Drawing.Size(73, 56);
+            this.Ext.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Ext.TabIndex = 0;
+            this.Ext.TabStop = false;
+            this.Ext.Click += new System.EventHandler(this.Ext_Click);
             // 
-            // panel3
+            // Kecid
             // 
-            this.panel3.Location = new System.Drawing.Point(149, 68);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(853, 545);
-            this.panel3.TabIndex = 2;
+            this.Kecid.Location = new System.Drawing.Point(149, 68);
+            this.Kecid.Name = "Kecid";
+            this.Kecid.Size = new System.Drawing.Size(1333, 691);
+            this.Kecid.TabIndex = 2;
             // 
             // panel2
             // 
@@ -76,7 +76,7 @@
             this.panel2.Controls.Add(this.BtnPerson);
             this.panel2.Location = new System.Drawing.Point(2, 68);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(144, 545);
+            this.panel2.Size = new System.Drawing.Size(144, 691);
             this.panel2.TabIndex = 0;
             // 
             // BtnOrder
@@ -87,6 +87,7 @@
             this.BtnOrder.TabIndex = 3;
             this.BtnOrder.Text = "Order";
             this.BtnOrder.UseVisualStyleBackColor = true;
+            this.BtnOrder.Click += new System.EventHandler(this.BtnOrder_Click);
             // 
             // BtnBook
             // 
@@ -96,6 +97,7 @@
             this.BtnBook.TabIndex = 4;
             this.BtnBook.Text = "Book";
             this.BtnBook.UseVisualStyleBackColor = true;
+            this.BtnBook.Click += new System.EventHandler(this.BtnBook_Click);
             // 
             // BtnPerson
             // 
@@ -105,15 +107,15 @@
             this.BtnPerson.TabIndex = 5;
             this.BtnPerson.Text = "Person";
             this.BtnPerson.UseVisualStyleBackColor = true;
-            this.BtnPerson.Click += new System.EventHandler(this.Button5_Click);
+            this.BtnPerson.Click += new System.EventHandler(this.BtnPerson_Click);
             // 
             // Dasboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.ClientSize = new System.Drawing.Size(1004, 612);
-            this.Controls.Add(this.panel3);
+            this.ClientSize = new System.Drawing.Size(1494, 764);
+            this.Controls.Add(this.Kecid);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -121,7 +123,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dasboard";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Ext)).EndInit();
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -129,11 +131,11 @@
 
         #endregion
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox Ext;
         private System.Windows.Forms.Button BtnOrder;
         private System.Windows.Forms.Button BtnBook;
         private System.Windows.Forms.Button BtnPerson;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel Kecid;
     }
 }

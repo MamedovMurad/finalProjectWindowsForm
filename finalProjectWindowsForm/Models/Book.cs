@@ -23,7 +23,8 @@ namespace finalProjectWindowsForm.Models
         [Required]
         [MaxLength(50)]
         public string BookGenre{ get; set; }
+        [Required]
         public float BookPrice { get; set; }
-        public string Count { get; set; }
+    
     }
 }

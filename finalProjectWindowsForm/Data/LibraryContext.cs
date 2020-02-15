@@ -16,15 +16,15 @@ namespace finalProjectWindowsForm.Data
         public LibraryContext() : base("DefaultConnection")
         {
 
-            Database.SetInitializer(new DropCreateDatabaseAlways<LibraryContext>());
+            
         }
         public DbSet<User> User{ get; set; }
-        public DbSet<Models.Book> Book { get; set; }
-        public DbSet<Models.Person> Person { get; set; }
+        public DbSet<Book> Book { get; set; }
+        public DbSet<Person> Person { get; set; }
 
-        public DbSet<Managment> Management { get; set; }
+        public DbSet<Management> Management { get; set; }
 
-        public DbSet<Models.Order> Order{ get; set; }
+        public DbSet<Order> Order{ get; set; }
  
     }
 }

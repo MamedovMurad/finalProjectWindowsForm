@@ -19,7 +19,7 @@ namespace finalProjectWindowsForm.Forms
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn(int left, int top, int right, int bottom, int width, int height);
        private readonly LibraryContext _context;
-        private User user;
+       
 
         public UserLogin()
         {
@@ -60,7 +60,7 @@ namespace finalProjectWindowsForm.Forms
 
                
                 return;
-                this.Close();
+                
             }
             MessageBox.Show("E-poçt və ya şifrə yalnışdır");
 

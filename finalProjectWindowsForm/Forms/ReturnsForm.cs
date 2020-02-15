@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace finalProjectWindowsForm.Forms
 {
-    public partial class Book : Form
+    public partial class ReturnsForm : Form
     {
-        public Book()
+        public ReturnsForm()
         {
             InitializeComponent();
         }
-
-        
     }
 }

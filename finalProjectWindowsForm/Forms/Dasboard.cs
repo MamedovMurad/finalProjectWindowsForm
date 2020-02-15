@@ -12,31 +12,44 @@ namespace finalProjectWindowsForm.Forms
 {
     public partial class Dasboard : Form
     {
+       
         public Dasboard()
         {
             InitializeComponent();
         }
 
+        private void Ext_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+       
+
         private void BtnPerson_Click(object sender, EventArgs e)
         {
-
+            Kecid.Controls.Clear();
+            PersonForm person = new PersonForm();
+            person.TopLevel = false;
+            Kecid.Controls.Add(person);
+            person.Show();
         }
 
-        private void PictureBox1_Click(object sender, EventArgs e)
+        private void BtnBook_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Kecid.Controls.Clear();
+            BooksForm book = new BooksForm();
+            book.TopLevel = false;
+            Kecid.Controls.Add(book);
+            book.Show();
         }
 
-        private void PictureBox2_Click(object sender, EventArgs e)
+        private void BtnOrder_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Kecid.Controls.Clear();
+            Order order = new Order();
+            order.TopLevel = false;
+            Kecid.Controls.Add(order);
+            order.Show();
         }
-
-        private void Button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        
     }
 }

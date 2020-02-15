@@ -56,12 +56,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Data\LibraryContext.cs" />
-    <Compile Include="Forms\Book.cs">
+    <Compile Include="Forms\BooksForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Book.Designer.cs">
-      <DependentUpon>Book.cs</DependentUpon>
+    <Compile Include="Forms\BooksForm.Designer.cs">
+      <DependentUpon>BooksForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Dasboard.cs">
       <SubType>Form</SubType>
@@ -75,11 +85,17 @@
     <Compile Include="Forms\Order.Designer.cs">
       <DependentUpon>Order.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Person.cs">
+    <Compile Include="Forms\PersonForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Person.Designer.cs">
-      <DependentUpon>Person.cs</DependentUpon>
+    <Compile Include="Forms\PersonForm.Designer.cs">
+      <DependentUpon>PersonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReturnsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReturnsForm.Designer.cs">
+      <DependentUpon>ReturnsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\UserLogin.cs">
       <SubType>Form</SubType>
@@ -87,20 +103,20 @@
     <Compile Include="Forms\UserLogin.Designer.cs">
       <DependentUpon>UserLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202002141652008_ADD.cs" />
-    <Compile Include="Migrations\202002141652008_ADD.designer.cs">
-      <DependentUpon>202002141652008_ADD.cs</DependentUpon>
+    <Compile Include="Migrations\202002151433179_bookandmanagementandorderandpersonandusercreated.cs" />
+    <Compile Include="Migrations\202002151433179_bookandmanagementandorderandpersonandusercreated.designer.cs">
+      <DependentUpon>202002151433179_bookandmanagementandorderandpersonandusercreated.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\Order.cs" />
-    <Compile Include="Models\Managment.cs" />
+    <Compile Include="Models\Management.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\Book.resx">
-      <DependentUpon>Book.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\BooksForm.resx">
+      <DependentUpon>BooksForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Dasboard.resx">
       <DependentUpon>Dasboard.cs</DependentUpon>
@@ -108,14 +124,14 @@
     <EmbeddedResource Include="Forms\Order.resx">
       <DependentUpon>Order.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Person.resx">
-      <DependentUpon>Person.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\PersonForm.resx">
+      <DependentUpon>PersonForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UserLogin.resx">
       <DependentUpon>UserLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202002141652008_ADD.resx">
-      <DependentUpon>202002141652008_ADD.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202002151433179_bookandmanagementandorderandpersonandusercreated.resx">
+      <DependentUpon>202002151433179_bookandmanagementandorderandpersonandusercreated.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -127,7 +143,30 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\finalProjectWindowsForm.Models.Book.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
